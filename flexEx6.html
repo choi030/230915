@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>flexEx1</title>
+  <style>
+    body {
+      margin:0;
+    }
+    .container {
+        background-color: #2CD3E1;
+        font-weight: bold;
+        display: flex;
+        width: 100vw; 
+        align-items: center;
+        gap: 30vw
+    };
+    .container .text {
+        width: 20vw; height: 3vh;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+    .container .box1 {
+        align-items: start;
+        width: 5vw; height: 5vh;
+        display: flex;
+        background-color: #FFB84C;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .container .box2 {
+        align-items: start;
+        width: 5vw; height: 5vh;
+        display: flex;
+        background-color: #F266AB;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <span class="box1">로고</span>
+        <input class="text" type="search" name="userSearch">
+    <span class="box2">메뉴</span>
+  </div>
+</body>
+</html>

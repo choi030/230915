@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html Lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body {
+            text-align: center;
+            margin: 0 auto;
+        }
+        .text {
+            background-color: #ADC4CE;
+            width: 20vw; height: 10vh;
+            margin: 1vw;
+            text-align: right;
+            font-weight: bold;
+            font-size: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .box {
+            width: 20vw; height: 10vh;
+        }
+        .container {
+            display: flex;
+            flex-flow: row;/* 주축 col, nowrap 기본값 생략 */
+            align-items: center;
+            justify-content: center;  
+        }
+        .text1, .text2, .box1, .box2  {
+            width: 20vw; height: 4vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="Ex">
+    <h1>폼 타이틀 세로 중앙정렬</h1>
+    <div class="form">
+        <div class="container container1">
+            <span class="text text1">채널 키워드</span>
+            <input class="box box1" type="text" name="text" placeholder="플렉스 적용하기">
+        </div>
+        <div class="container container2">
+            <span class="text text2">채널 키워드</span>
+            <input class="box box2" type="text" name="text" placeholder="플렉스 적용하기">
+        </div>
+        <div class="container container3">
+            <span class="text text3">channel keyword</span>
+            <input class="box box3" type="text" name="text" placeholder="플렉스 적용하기">
+        </div>
+        <div class="container container4">
+            <span class="text text4">channel keyword 채널 키워드</span>
+        <input class="box box4" type="text" name="text" placeholder="플렉스 적용하기">
+        </div>
+        <div class="container container5">
+            <span class="text text5">채널 키워드</span>
+            <input class="box box5" type="text" name="text" placeholder="플렉스 적용하기">
+        </div>
+    </div>
+    </div>
+</body>
+</html>
