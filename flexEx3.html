@@ -1,51 +1,53 @@
 <!DOCTYPE html>
-<html Lang="ko">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <title>flexEx3</title>
-    <style>
-    body {    
-        font-size: 20px;
-        font-weight: bold;
+  <meta charset="UTF-8">
+  <title>flexEx3</title>
+  <style>
+    body {
+      margin: 0;
+      font-weight: bold;
+      font-size: 2rem;
     }
-    .wrapper {
-        width: 70vw; height: 50vh;
-        border: 6px solid #000;
+    .container {
+      background-color: #ddd;
+      display: flex;
+      flex-direction: column;
+      /* height: 100vh; */
     }
-    .wrapper .item1 { background-color: #EBE76C;}
-    .wrapper .item2 { background-color: #F0B86E;}
-    .wrapper .item3 { background-color: #ED7B7B;}
-    .wrapper .item4 { background-color: #836096;}
-    .item {
-        width: 50%;
-        height: 20vh;
+    .container header { 
+      background-color: #96C291;
+      height: 14vh;
     }
-    #container {
-        display: flex;
-        flex-flow:  row wrap;
-        align-content: stretch;
+    .container nav { 
+      background-color: #FFDBAA;
+      height: 6vh;
     }
-    #container .item1 {
-        width: 70vw; height: 10vh;
+    .container main { 
+      background-color: #FFB7B7;
+      color:#fff;
+      display: flex;
+      height: 80vh;/* 100vh - header14vh - nav6vh */
+      height: calc(100vh - 14vh - 6vh);
     }
-    #container .item2 {
-        width: 70vw; height: 5vh;
+     .container main aside { 
+      background-color: #337CCF;
+      width:30%;
     }
-    #container .item3 {
-        width: 30%; height: 35vh;
+    .container main section { 
+      background-color: #FFC436;
+      width:70%;
     }
-    #container .item4 {
-        width: 70%; height: 35vh;
-    }
-    </style>
+  </style>
 </head>
 <body>
-    <h1>flexEx3</h1>
-    <div class="wrapper" id="container">
-        <div class="item item1">header</div>
-        <div class="item item2">nav</div>
-        <div class="item item3">aside</div>
-        <div class="item item4">section</div>
-    </div>
+  <div class="container"><!-- flex-container -->
+    <header>header</header><!-- flex-item -->
+    <nav>nav</nav><!-- flex-item -->
+    <main><!-- flex-item / flex-container -->
+      <aside>aside</aside><!-- flex-item -->
+      <section>section</section><!-- flex-item -->
+    </main>
+  </div>
 </body>
 </html>
